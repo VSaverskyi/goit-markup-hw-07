@@ -18,19 +18,20 @@
     border-color: var(--icon-color);
     border-radius: 4px;
     transition: border-color 250ms var(--tra-cubic);
+
+    &:hover,
+    &:focus {
+    border-color: var(--second-link-color);
+    }
   }
   .clients-icon {
     width: 100%;
     height: 100%;
     fill: var(--icon-color);
     transition: fill 250ms var(--tra-cubic);
-  }
-  
-  .clients-link:hover,
-  .clients-link:focus {
-    border-color: var(--second-link-color);
-  }
-  .clients-link:hover .clients-icon,
-  .clients-link:focus .clients-icon {
+
+    .clients-link:hover &,
+    .clients-link:focus & {
     fill: var(--second-link-color);
+    }
   }

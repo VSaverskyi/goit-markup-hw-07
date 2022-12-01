@@ -35,11 +35,13 @@
   .footer-link {
     color: var(--color-footer-link);
     transition: color 250ms var(--tra-cubic);
-  }
-  .footer-link:hover,
-  .footer-link:focus {
+
+    &:hover,
+    &:focus {
     color: var(--color-blue);
+    }
   }
+  
   
   .footer-title {
     font-size: 14px;
@@ -76,21 +78,24 @@
     border-radius: 4px;
     padding: 15px 16px;
     color: var(--color-white);
-  }
-  .subscribe-input::placeholder {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.25;
-    display: flex;
-    align-items: center;
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
-  }
-  .subscribe-input:hover,
-  .subscribe-input:focus {
+
+    &::placeholder {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.25;
+      display: flex;
+      align-items: center;
+      letter-spacing: 0.03em;
+      color: rgba(255, 255, 255, 0.6);
+    }
+    &:hover,
+    &:focus {
     border-color: var(--color-blue);
     outline: transparent;
+    }
   }
+  
+  
   .subscribe-btn {
     min-width: 200px;
     font-weight: 700;
@@ -106,11 +111,13 @@
     justify-content: center;
     gap: 10px;
     transition: background-color 250ms var(--tra-cubic);
+
+    &:hover,
+    &:focus {
+    background-color: var(--color-blue-dark);
+    }
   }
   .subscribe-icon {
     fill: var(--first-btn-color);
   }
-  .subscribe-btn:hover,
-  .subscribe-btn:focus {
-    background-color: var(--color-blue-dark);
-  }
+  

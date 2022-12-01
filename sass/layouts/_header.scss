@@ -41,11 +41,11 @@
     padding-top: 32px;
     padding-bottom: 32px;
     transition: color 250ms var(--tra-cubic);
-  }
-  
-  .nav-site-link:hover,
-  .nav-site-link:focus {
+
+    &:hover,
+    &:focus {
     color: var(--second-link-color);
+    }
   }
   
   .current::after {
@@ -75,13 +75,13 @@
     letter-spacing: 0.02em;
     color: var(--color-gray);
     transition: color 250ms var(--tra-cubic);
+
+    &:hover,
+    &:focus {
+    color: var(--color-blue);
+    }
   }
   .contacts-link-icon {
     margin-right: 10px;
     fill: currentColor;
-  }
-  
-  .header-contacts-link:hover,
-  .header-contacts-link:focus {
-    color: var(--color-blue);
   }

@@ -40,9 +40,9 @@
     border-radius: 4px;
     padding: 10px 32px;
     transition: background-color 250ms var(--tra-cubic);
-  }
-  
-  .hero-btn:hover,
-  .hero-btn:focus {
+
+    &:hover,
+    &:focus {
     background-color: var(--color-blue-dark);
+    }
   }

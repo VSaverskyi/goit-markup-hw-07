@@ -56,17 +56,18 @@
     align-items: center;
     justify-content: center;
     transition: background-color 250ms var(--tra-cubic);
+
+    &:hover,
+    &:focus {
+    background-color: var(--hover-social-background-color);
+    }
   }
   .social-icon {
     fill: var(--icon-color);
     transition: fill 250ms var(--tra-cubic);
-  }
-  
-  .social-link:hover,
-  .social-link:focus {
-    background-color: var(--hover-social-background-color);
-  }
-  .social-link:hover .social-icon,
-  .social-link:focus .social-icon {
+
+    .social-link:hover &,
+    .social-link:focus & {
     fill: var(--hover-icon-color);
+    }
   }
