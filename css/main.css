@@ -1071,6 +1071,7 @@ body {
 
 .check-link {
   color: var(--second-link-color);
+  text-decoration: underline;
 }
 
 .modal-btn {
