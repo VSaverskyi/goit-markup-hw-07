@@ -1,69 +1,72 @@
 .team {
-    background-color: $backgroundColor-light;
+    background-color: var(--background-color-light);
     text-align: center;
   }
   
-  .team a {
+  /* .team a {
     text-decoration: none;
-  }
-  .team__list {
+  } */
+  .team-list {
     display: flex;
     gap: 30px;
   }
-  .team__card {
+  .team-card {
     width: calc((100% - 90px) / 4);
-    background-color: $colorLight;
+    background-color: var(--background-color-white);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
   }
-  .card__bottom {
+  .team-card-bottom {
     padding-top: 30px;
     padding-bottom: 30px;
   }
-  .card__title {
+  .card-title {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
-    color: $mainColor;
+    color: var(--title-color);
     margin-bottom: 10px;
   }
-  .card__text {
+  .card-text {
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
-    color: $colorText;
+    color: var(--text-color);
     margin-bottom: 16px;
   }
-  .social__list {
+  .social-list {
     display: flex;
     gap: 10px;
     justify-content: center;
   }
-  .social__item {
+  .social-item {
     width: 44px;
     height: 44px;
   }
-  .social__link {
+  .social-link {
     width: 100%;
     height: 100%;
-    background-color: $colorLight;
+    background-color: var(--social-background-color);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: background-color 250ms $transitionCubic;
-    .social__icon {
-        fill: $colorIcon;
-        transition: fill 250ms $transitionCubic;
-      }
-    &:hover, &:focus {
-        background-color: $colorSecondary;
-        .social__icon {
-            fill: $colorLight;
-        }
-    }
+    transition: background-color 250ms var(--tra-cubic);
+  }
+  .social-icon {
+    fill: var(--icon-color);
+    transition: fill 250ms var(--tra-cubic);
+  }
+  
+  .social-link:hover,
+  .social-link:focus {
+    background-color: var(--hover-social-background-color);
+  }
+  .social-link:hover .social-icon,
+  .social-link:focus .social-icon {
+    fill: var(--hover-icon-color);
   }
