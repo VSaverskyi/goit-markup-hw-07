@@ -4,13 +4,13 @@
     padding-bottom: 60px;
   }
   
-  .container--footer {
+  .footer__container {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
   }
   
-  .logo--footer {
+  .logo--white {
     color: var(--footer-logo-color);
   }
   .address {
@@ -39,7 +39,7 @@
   }
   
   
-  .footer-title {
+  .footer__title {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
@@ -48,19 +48,11 @@
     margin-bottom: 20px;
   }
   
-  .social__link--footer {
-    background-color: var(--footer-social-background-color);
-  }
-  
-  .social__icon--footer {
-    fill: var(--hover-icon-color);
-  }
-  
   .subscribe-form {
     display: flex;
     flex-direction: column;
   }
-  .footer-title--subscribe-form {
+  .footer__title--subscribe-form {
     font-weight: 700;
   }
   .subscribe-form__wrap {

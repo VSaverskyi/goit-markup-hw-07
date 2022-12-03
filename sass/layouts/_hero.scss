@@ -10,7 +10,7 @@
     background-size: cover;
     margin: 0 auto;
   }
-  .container--hero {
+  .hero__container {
     padding-top: 200px;
     padding-bottom: 200px;
     text-align: center;
@@ -28,7 +28,7 @@
     animation-duration: 2000ms;
   }
   
-  .hero--btn {
+  .hero__btn {
     min-width: 216px;
     font-weight: 700;
     font-size: 16px;
