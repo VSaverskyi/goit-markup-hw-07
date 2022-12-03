@@ -10,12 +10,12 @@
     background-size: cover;
     margin: 0 auto;
   }
-  .container-hero {
+  .container--hero {
     padding-top: 200px;
     padding-bottom: 200px;
     text-align: center;
   }
-  .hero-title {
+  .hero__title {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -28,7 +28,7 @@
     animation-duration: 2000ms;
   }
   
-  .hero-btn {
+  .hero--btn {
     min-width: 216px;
     font-weight: 700;
     font-size: 16px;
