@@ -423,19 +423,6 @@ body {
   pointer-events: none;
 }
 
-.header {
-  border-bottom: 1px solid #ececec;
-}
-
-.header__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 .logo {
   font-family: var(--font-ral);
   font-weight: 700;
@@ -447,6 +434,23 @@ body {
 
 .logo__web {
   color: var(--second-logo-color);
+}
+
+.logo--color-light {
+  color: var(--footer-logo-color);
+}
+
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
+.header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .nav-site {
@@ -768,10 +772,6 @@ body {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
-}
-
-.logo--white {
-  color: var(--footer-logo-color);
 }
 
 .address {
