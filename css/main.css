@@ -94,6 +94,21 @@ body {
 .btn {
   font-family: inherit;
   border: none;
+  min-width: 200px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  background-color: var(--color-blue);
+  color: var(--first-btn-color);
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  -webkit-transition: background-color 250ms var(--tra-cubic);
+  transition: background-color 250ms var(--tra-cubic);
+}
+.btn:hover, .btn:focus {
+  background-color: var(--color-blue-dark);
 }
 
 .section-title {
@@ -396,25 +411,10 @@ body {
   text-decoration: underline;
 }
 
-.btn--modal {
-  min-width: 200px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
-  background-color: var(--color-blue);
-  color: var(--first-btn-color);
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
+.modal__btn {
   padding: 10px 52px;
   margin: 0 auto;
   display: block;
-  -webkit-transition: background-color 250ms var(--tra-cubic);
-  transition: background-color 250ms var(--tra-cubic);
-}
-.btn--modal:hover, .btn--modal:focus {
-  background-color: var(--color-blue-dark);
 }
 
 .backdrop--is-hidden {
@@ -561,21 +561,7 @@ body {
 
 .hero__btn {
   min-width: 216px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
-  background-color: var(--color-blue);
-  color: var(--first-btn-color);
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
   padding: 10px 32px;
-  -webkit-transition: background-color 250ms var(--tra-cubic);
-  transition: background-color 250ms var(--tra-cubic);
-}
-.hero__btn:hover, .hero__btn:focus {
-  background-color: var(--color-blue-dark);
 }
 
 .features-list {
@@ -899,17 +885,7 @@ body {
   outline: transparent;
 }
 
-.subscribe--btn {
-  min-width: 200px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
-  background-color: var(--color-blue);
-  color: var(--first-btn-color);
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
+.subscribe__btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -920,11 +896,6 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 10px;
-  -webkit-transition: background-color 250ms var(--tra-cubic);
-  transition: background-color 250ms var(--tra-cubic);
-}
-.subscribe--btn:hover, .subscribe--btn:focus {
-  background-color: var(--color-blue-dark);
 }
 
 .subscribe-form__icon {
